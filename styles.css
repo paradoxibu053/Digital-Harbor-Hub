@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-color: #1c202d;
+  color: #ffffff;
+}
+
+/* Navbar starts */
+.navbar {
+  background-color: #212634;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+.logo-menu{
+   vertical-align: middle;
+}
+.logo-menu img {
+  width: 60px; 
+  height: auto; 
+}
+.company-name {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 10px;
+  
+}
+.wallet-container {
+    border: 2px solid #ffff; 
+    border-radius: 20px; 
+    display: inline-block; 
+    padding: 10px;
+}
+.wallet-container {
+    border: 2px solid #ffff; 
+    border-radius: 20px; 
+    display: inline-block; 
+    padding: 10px;
+}
+
+.navbar .wallet {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .wallet img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    filter: invert(); 
+}
+
+.navbar .wallet a {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px; 
+    border-radius: 50px 50px 50px 50px; 
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .wallet a:hover {
+    background-color: #3e8e41;
+}
+.container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+}
+
+.card {
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ margin-bottom: 20px;
+}
+.card-body {
+  background-color: #f8f9fa; 
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.card-title {
+ font-weight: bold;
+}
+
+
+/* Navbar ends */
+
+/* ... slidebar ... */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #333;
+  padding-top: 60px; 
+  z-index: 9;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ... slidbar end ... */
+
+/* leader board */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #dddddd;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
