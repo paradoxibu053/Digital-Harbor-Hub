@@ -11,14 +11,14 @@ closeBtn.addEventListener("click", () => {
   sidebar.classList.remove("open");
   sidebar.style.left = "-250px";
 });
-document
-  .getElementById("connect-wallet")
-  .addEventListener("click", function () {
-    document.getElementById("wallet-modal").style.display = "flex";
-  });
+// document
+//   .getElementById("connect-wallet")
+//   .addEventListener("click", function () {
+//     document.getElementById("wallet-modal").style.display = "flex";
+//   });
 
-document
-  .getElementById("close-wallet-modal")
-  .addEventListener("click", function () {
-    document.getElementById("wallet-modal").style.display = "none";
-  });
+// document
+//   .getElementById("close-wallet-modal")
+//   .addEventListener("click", function () {
+//     document.getElementById("wallet-modal").style.display = "none";
+//   });

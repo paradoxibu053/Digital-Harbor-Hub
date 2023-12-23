@@ -29,7 +29,7 @@
     </div>
   </div>
 </div>
-  <div class="wallet-modal" id="wallet-modal">
+  <!-- <div class="wallet-modal" id="wallet-modal">
       <div class="container">
  <h1 class="mb-5">Connect a Wallet</h1>
 
@@ -55,7 +55,7 @@
  </div>
 </div>
     <button id="close-wallet-modal">Close</button>
-  </div>
+  </div> -->
 
 <div class="sidebar">
   <button class="close-btn" id="close-btn">&times;</button>
@@ -126,25 +126,28 @@
 
 
     
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "1260",
+  "height": "610",
+  "symbol": "NASDAQ:AAPL",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "in",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
     <script src="./scrpit.js"></script>
-    <script type="text/javascript"
-          src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
-          async >
-          {
-              "width": "1262",
-              "height": "610",
-              "symbol": "BINANCE:BTCUSDT",
-              "interval": "D",
-              "timezone": "Etc/UTC",
-              "theme": "dark",
-              "style": "1",
-              "locale": "in",
-            "enable_publishing": false,
-            "allow_symbol_change": true,
-            "calendar": true,
-            "support_host": "#"
-        }
-    </script>
   </body>
 </html>
