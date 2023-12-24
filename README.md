@@ -17,4 +17,6 @@ JavaScript
 TradingView API
 
 Designer
-This project is designed by Ibrahim BHat 
+This project is designed by Ibrahim Bhat
+
+        "Made this project on the basis of PixelBridges"
