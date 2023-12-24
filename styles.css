@@ -28,6 +28,47 @@ body {
   margin-left: 15px;
 }
 
+.hamburger-menu button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.hamburger-menu .bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu button {
+    padding: 10px;
+  }
+
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 2px;
+    margin: 4px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hamburger-menu button {
+    padding: 8px;
+  }
+
+  .hamburger-menu .bar {
+    width: 20px;
+    height: 2px;
+    margin: 3px 0;
+  }
+}
+
 /* Logo and Menu Styles */
 .logo-menu {
   display: flex;
