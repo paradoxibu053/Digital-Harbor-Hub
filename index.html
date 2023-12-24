@@ -6,6 +6,8 @@
     <title>Project</title>
     <link rel="stylesheet" href="./styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
 </head>
 <body>
 
@@ -22,6 +24,7 @@
     <span class="company-name">LEXER</span>
   </div>
 
+  <!-- wallet -->
   <div class="wallet-container">
     <div class="wallet">
       <img src="./images/icons8-wallet-50.png" alt="Wallet Logo" />
@@ -29,34 +32,39 @@
     </div>
   </div>
 </div>
-  <!-- <div class="wallet-modal" id="wallet-modal">
+<!-- wallet dropdown -->
+   <div class="wallet-modal" id="wallet-modal">
       <div class="container">
  <h1 class="mb-5">Connect a Wallet</h1>
 
  <div class="card">
     <div class="card-body">
-      <h2 class="card-title">A Home for your Digital Assets</h2>
+      <h2 class="card-title">A Home for your Digital Assets..</h2>
       <p class="card-text">Wallets are used to send, receive, store, and display digital assets like Ethereum and NFTs.</p>
-    </div>
- </div>
-
- <div class="card mt-4">
-    <div class="card-body">
-      <h2 class="card-title">A New Way to Log In</h2>
+      <h2 class="card-title">A New Way to Log In..</h2>
       <p class="card-text">Instead of creating new accounts and passwords on every website, just connect your wallet.</p>
     </div>
  </div>
 
- <div class="card mt-4">
-    <div class="card-body">
-      <h5 class="card-title">Get a Wallet</h5>
-      <p class="card-text">Learn More</p>
+<div class="card mt-4">
+  <div class="card-body">
+    <h3 class="card-title">Get a Wallet</h3>
+    <div class="icons">
+      <a href="#" class="icon-link"><img src="./images/metamask-icon.png" alt="MetaMask" /></a>
+      <a href="#" class="icon-link"><img src="./images/Rabby.png" alt="Rabby" /></a>
+      <a href="#" class="icon-link"><img src="./images/WalletConnect-logo.png" alt="WalletConnect" /></a>
+      <a href="#" class="icon-link"><img src="path/to/rainbow-icon.png" alt="Rainbow" /></a>
     </div>
- </div>
+    <p class="card-text">Learn More</p>
+  </div>
+</div>
+
+
 </div>
     <button id="close-wallet-modal">Close</button>
-  </div> -->
+  </div> 
 
+  <!-- slide bar -->
 <div class="sidebar">
   <button class="close-btn" id="close-btn">&times;</button>
   <ul>
@@ -64,7 +72,6 @@
     <li><a href="./leaderboard.html">Leaderboard</a></li>
     <li><a href="./dashborad.html">Dashboard</a></li>
     <li><a href="./overview.html">Overview</a></li>
-    <li><a href="./news.html">Top News</a></li>
     
 
   </ul>
@@ -124,8 +131,6 @@
     </div>
     <!-- Trading chart end -->
 
-
-    
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
@@ -147,6 +152,27 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+  {
+  "symbol": "NASDAQ:AAPL",
+  "width": "1260",
+  "locale": "in",
+  "colorTheme": "dark",
+  "isTransparent": false
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+<footer>
+  <p>Design by <a href="https://www.gowithibrahim.in" target="_blank">Ibrahim Bhat</a></p>
+</footer>
+
 
     <script src="./scrpit.js"></script>
   </body>

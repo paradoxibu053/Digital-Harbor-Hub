@@ -24,91 +24,118 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
-}
-.navbar a {
-  color: white;
-  text-decoration: none;
+  font-size: 16px; /* Adjust font size as needed */
   margin-left: 15px;
-}
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-}
-.logo-menu{
-   vertical-align: middle;
-}
-.logo-menu img {
-  width: 60px; 
-  height: auto; 
-}
-.company-name {
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-left: 10px;
-  
-}
-.wallet-container {
-    border: 2px solid #ffff; 
-    border-radius: 20px; 
-    display: inline-block; 
-    padding: 10px;
-}
-.wallet-container {
-    border: 2px solid #ffff; 
-    border-radius: 20px; 
-    display: inline-block; 
-    padding: 10px;
 }
 
-.navbar .wallet {
-    display: flex;
-    align-items: center;
+.logo-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo-menu img {
+  width: 60px;
+  height: auto;
+  margin-right: 10px; 
+}
+
+.company-name {
+  color: white;
+  font-size: 34px; 
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wallet-container {
+  border: 2px solid #ffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .navbar .wallet img {
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    filter: invert(); 
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  filter: invert();
 }
 
 .navbar .wallet a {
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 15px; 
-    border-radius: 50px 50px 50px 50px; 
-    text-decoration: none;
-    font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .navbar .wallet a:hover {
-    background-color: #3e8e41;
+  background-color: #3e8e41;
 }
+
 .container {
  max-width: 800px;
  margin: 0 auto;
  padding: 20px;
 }
 
-.card {
- border: 1px solid #ddd;
- border-radius: 4px;
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
- padding: 20px;
- margin-bottom: 20px;
+.wallet-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 38, 52, 0.2);
+  justify-content: center;
+  align-items: center;
 }
-.card-body {
-  background-color: #f8f9fa; 
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 10px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(33, 38, 52, 0.2);
+  border-radius: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  background-color: rgba(3, 4, 6, 2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
- font-weight: bold;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-text{
+  color:#777;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-link img {
+  width: 40px; 
+  height: 40px; 
+  margin-right: 10px;
+}
+
+.icon-link:hover img {
+  filter: brightness(1.2);
 }
 
 
@@ -122,8 +149,8 @@ body {
   left: -250px;
   width: 250px;
   height: 100vh;
-  background-color: #333;
-  padding-top: 60px; 
+   background-color: rgba(37, 41, 57, 0.9);
+  padding-top: 60px;
   z-index: 9;
   transition: left 0.3s ease-in-out;
 }
@@ -133,14 +160,25 @@ body {
   padding: 0;
 }
 
-.sidebar li {
+.sidebar ul li {
   padding: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 36px;
+  transition: color 0.3s ease-in-out;
 }
+
+.sidebar ul li:hover {
+  color: #42a5f5;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
 
 .sidebar a {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use your preferred font family */
 }
 
 .close-btn {
@@ -149,8 +187,10 @@ body {
   right: 15px;
   font-size: 30px;
   color: white;
+  background-color: #1c202d;
   cursor: pointer;
 }
+
 
 /* ... slidbar end ... */
 
@@ -193,3 +233,82 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+/* footer */
+footer {
+  background-color: #212634;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: #42a5f5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* footer end */
+
+
+/* media queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo-menu img {
+    width: 40px;
+  }
+
+  .wallet-container {
+    padding: 5px;
+  }
+
+  .navbar .wallet img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-menu img {
+    width: 30px;
+  }
+
+  .navbar .wallet img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .tradingview-widget-container {
+    max-width: 100%;
+    width: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tradingview-widget-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tradingview-widget-container {
+    max-width: 80%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tradingview-widget-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
