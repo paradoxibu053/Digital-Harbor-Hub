@@ -126,12 +126,12 @@ body {
   }
 
   .navbar .wallet-container img {
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
   }
 
   .wallet-link {
-    font-size: 5px;
+    font-size: 7px;
   }
 }
 
