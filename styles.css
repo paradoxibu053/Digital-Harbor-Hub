@@ -230,6 +230,16 @@ body {
   height: 40px;
   margin-right: 10px;
 }
+.icon-link2 img {
+  width: 70px;
+  height: 60px;
+  margin-right: 10px;
+}
+.icon-link3 img {
+  width: 100px;
+  height: 40px;
+  margin-right: 10px;
+}
 
 .icon-link:hover img {
   filter: brightness(1.2);
